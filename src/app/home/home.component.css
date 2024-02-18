@@ -1,0 +1,38 @@
+.example-card {
+    margin-bottom: 15px;
+    background-color: white;
+  }
+  
+  .example-header-image {
+    background-size: cover;
+  }
+
+  .main-text{
+    color: #c2185b;
+    -webkit-background-clip: text;
+    display: inline-block;
+    background-clip: text;
+    font-size: 500%;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+
+  @media screen and(max-width: 768px) {
+    .main-text{
+        font-size: 16vw;
+    }
+  }
+
+  @media screen and(max-width: 480px) {
+    .main-text{
+        font-size: 12vw;
+    }
+  }
+
+  trans{
+    box-shadow: 0 0 1rem 0 rgba(0,0,0, .2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(15px);
+  }

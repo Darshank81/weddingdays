@@ -2,7 +2,8 @@ p {
     font-family: Lato;
   }
   .position-fixed{
-    position: fixed
+    position: fixed;
+    z-index: 2;
   }
   
   .mat-spacer{
@@ -10,5 +11,7 @@ p {
   }
   
   .content {
-    margin-top: 58px
+    margin-top: 75px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
