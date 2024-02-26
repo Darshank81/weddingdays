@@ -1,6 +1,7 @@
 .example-card {
     margin-bottom: 15px;
-    background-color: white;
+    background-color: #d4d4d4;
+    text-align: center;
   }
   
   .example-header-image {
@@ -8,31 +9,61 @@
   }
 
   .main-text{
-    color: #c2185b;
+    color: #D43790;
     -webkit-background-clip: text;
     display: inline-block;
     background-clip: text;
-    font-size: 500%;
+    font-size: 300%;
     padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins',sans-serif;
     font-weight: bold;
+    text-shadow: 
+    -8px -8px 12px rgb(156, 253, 0),
+     8px 8px 12px rgba(0,0,0,0.08);
+     caret-color:#262626;
+     outline: none;
   }
 
   @media screen and(max-width: 768px) {
-    .main-text{
+    .emboss{
         font-size: 16vw;
     }
   }
 
   @media screen and(max-width: 480px) {
-    .main-text{
+    .emboss{
         font-size: 12vw;
     }
   }
 
-  trans{
+  .trans{
     box-shadow: 0 0 1rem 0 rgba(0,0,0, .2);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(15px);
+  }
+
+  .text-style-1{
+    font-family: 'comic sans MS';
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 0px;
+    color: #28302c;
+    font-weight: bold;
+    text-shadow: 0 -4px 3px rgb(255, 243, 209), 0 3px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .text-style-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+  
+  .emboss{
+    color: #D43790;
+    text-shadow: 0 -4px 3px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
+    font-size: 400%;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
   }

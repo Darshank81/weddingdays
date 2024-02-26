@@ -1,0 +1,57 @@
+.example-card {
+    margin-bottom: 15px;
+    background-color: #e0e5eb;
+}
+  
+.example-header-image {
+    background-size: cover;
+}
+
+.main-text{
+    color: #ff00ff;
+    -webkit-background-clip: text;
+    display: inline-block;
+    background-clip: text;
+    font-size: 300%;
+    padding: 10px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    text-shadow: 
+    -8px -8px 12px rgba(255,255,255,0.4),
+     8px 8px 12px rgba(0,0,0,0.08);
+     caret-color:#262626;
+     outline: none;
+}
+
+@media screen and(max-width: 768px) {
+    .main-text{
+        font-size: 16vw;
+    }
+  }
+
+  @media screen and(max-width: 480px) {
+    .main-text{
+        font-size: 12vw;
+    }
+}
+
+.text-style-1{
+    font-family: 'comic sans MS';
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 15px;
+    color: blue;
+    font-weight: bold;
+}
+
+.text-style-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.responsive-image{
+    max-width: 100%;
+    height: auto;
+}

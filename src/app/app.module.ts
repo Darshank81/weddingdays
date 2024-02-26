@@ -9,24 +9,36 @@ import { MatListModule } from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { HomeComponent } from './home/home.component';
+import { EventComponent } from './event/event.component';
+import { PlaceComponent } from './place/place.component';
+import { ImageComponent } from './image/image.component';
+import { VidComponent } from './vid/vid.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    EventComponent,
+    PlaceComponent,
+    ImageComponent,
+    VidComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

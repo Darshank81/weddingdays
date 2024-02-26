@@ -1,17 +1,52 @@
-<mat-sidenav-container style="background-color: rgb(250, 204, 204); 
+<mat-sidenav-container style="background-color: rgb(255, 237, 237); 
                               background-attachment: fixed; 
                               background-size: cover;">
+
+  <!-- The side nav -->
+	<mat-sidenav #drawer fixedInViewport="true" mode="over" opened="false" style="max-width: 20%; background-color: white;">
+		<mat-toolbar style="background-color: #D43790">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)=drawer.toggle()>
+        <mat-icon aria-label="Side nav toggle icon">close</mat-icon>
+      </button>
+    </mat-toolbar>
+		<mat-nav-list style="background-color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center;">
+			<mat-list-item routerLink="/" style="color: #D43790;">
+        <button mat-icon-button>
+          <mat-icon routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ariaCurrentWhenActive="page">home</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-list-item routerLink="/place" style="color: #D43790;">
+        <button mat-icon-button><mat-icon routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ariaCurrentWhenActive="page">place</mat-icon></button>
+      </mat-list-item>
+      <mat-list-item routerLink="/image" style="color: #D43790;">
+        <button mat-icon-button><mat-icon routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ariaCurrentWhenActive="page">image</mat-icon></button>
+      </mat-list-item>
+      <mat-list-item routerLink="/vid" style="color: #D43790;">
+        <button mat-icon-button><mat-icon routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ariaCurrentWhenActive="page">play_arrow</mat-icon></button>
+      </mat-list-item>
+		</mat-nav-list>
+	</mat-sidenav>
+	<!-- EO: Side nav-->
+
 	<!-- Side nav content-->
 	<mat-sidenav-content>
-	<mat-toolbar class="position-fixed mat-elevation-z10" color="primary">
+	<mat-toolbar class="position-fixed mat-elevation-z10" style="background-color: #D43790">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)=drawer.toggle()>
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
       <span class="mat-spacer"></span>
       <span>Wedding Invitation</span>
     </mat-toolbar>
     <div class="content">
-        <app-home></app-home>
-        <app-home></app-home>
-        <app-home></app-home>
-        <app-home></app-home>
+      <router-outlet></router-outlet>
     </div>
   </mat-sidenav-content>
   <!-- EO: Side nav content-->
