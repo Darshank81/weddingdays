@@ -36,12 +36,13 @@
 }
 
 .text-style-1{
-    font-family: 'comic sans MS';
+    font-family: 'comic sans MS', cursive, sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
-    padding: 15px;
-    color: blue;
+    padding: 0px;
+    color: #28302c;
     font-weight: bold;
+    text-shadow: 0 -4px 3px rgb(255, 243, 209), 0 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .text-style-2{
@@ -54,4 +55,12 @@
 .responsive-image{
     max-width: 100%;
     height: auto;
+}
+
+.emboss{
+    color: #D43790;
+    text-shadow: 0 -4px 3px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
+    font-size: 300%;
+    font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: bold;
 }
