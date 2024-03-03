@@ -14,7 +14,7 @@
       </button>
     </mat-toolbar>
 		<mat-nav-list style="background-color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center;">
-			<mat-list-item routerLink="/" style="color: #D43790;">
+			<mat-list-item routerLink="/" style="color: #D43790">
         <button mat-icon-button (click)=drawer.toggle()>
           <mat-icon routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ariaCurrentWhenActive="page">home</mat-icon>
         </button>
@@ -28,6 +28,7 @@
       <mat-list-item routerLink="/vid" style="color: #D43790;">
         <button mat-icon-button (click)=drawer.toggle()><mat-icon routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ariaCurrentWhenActive="page">play_arrow</mat-icon></button>
       </mat-list-item>
+      <mat-list-item></mat-list-item>
 		</mat-nav-list>
 	</mat-sidenav>
 	<!-- EO: Side nav-->

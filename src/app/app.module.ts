@@ -11,7 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 import { HomeComponent } from './home/home.component';
 import { EventComponent } from './event/event.component';
@@ -38,7 +38,8 @@ import { VidComponent } from './vid/vid.component';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
