@@ -1,6 +1,9 @@
 .example-card {
     margin-bottom: 15px;
-    background-color: #e0e5eb;
+    background-color: #110118;
+    text-align: center;
+    border-radius:20px;
+    backdrop-filter: blur(10px);
 }
   
 .example-header-image {
@@ -58,9 +61,52 @@
 }
 
 .emboss{
-    color: #D43790;
-    text-shadow: 0 -4px 3px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
     font-size: 300%;
     font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: bold;
 }
+
+
+/* ------------------------------------------------------------------------ */
+
+
+.trans-color-1{
+    background: #03001e;
+    font-size: 30px;
+    font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: bold;
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #ffd780 30%, #f9c54e 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #ffb100 62.5%, #ffb100 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    }
+  
+    @media screen and(max-width: 768px) {
+      .trans-color-1{
+          font-size: 16vw;
+      }
+    }
+  
+    @media screen and(max-width: 480px) {
+      .trans-color-1{
+          font-size: 12vw;
+      }
+    }
+  
+    .trans-color-2{
+        background: #03001e;
+        font-size: 20px;
+        background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #ffd780 30%, #f9c54e 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #ffb100 62.5%, #ffb100 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        padding: 10px;
+        font-weight: bold;
+      }
+    
+      .golden{
+        background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #ffd780 30%, #f9c54e 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #ffb100 62.5%, #ffb100 100%);
+        color: #110118;
+        font-weight: bold;
+      }
